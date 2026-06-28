@@ -1,16 +1,103 @@
-# React + Vite
+# Nike Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Nike landing page built using **React.js** and **Vite**. This project is my first React application and focuses on component-based development, responsive UI design, and clean layout creation.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://myfirstreactproject1s.netlify.app
 
-## React Compiler
+## 📸 Screenshot
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img width="100%" alt="Nike Landing Page" src="./src/assets/screenshot.png">
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive landing page
+- React component-based architecture
+- Navigation bar
+- Hero section
+- Call-to-action buttons
+- Modern and clean UI
+- Fast development using Vite
+
+## 🛠️ Built With
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- HTML5
+
+## 📁 Project Structure
+
+```
+project-1
+│── public
+│── src
+│   ├── assets
+│   ├── components
+│   │   ├── Hero.jsx
+│   │   └── Navigation.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│── package.json
+│── vite.config.js
+```
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Shreeshant-15/React_projects.git
+```
+
+Go to the project folder
+
+```bash
+cd React_projects/project-1
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+## 📚 What I Learned
+
+- React Components
+- JSX
+- Project Structure
+- Props
+- CSS Styling
+- Vite Project Setup
+- Deploying React applications using Netlify
+
+## 🙌 Acknowledgements
+
+This project was created as part of my React learning journey.
+
+## 👨‍💻 Author
+
+**B H Shreeshant**
+
+GitHub:
+https://github.com/Shreeshant-15
+
+LinkedIn:
+https://www.linkedin.com/in/b-h-shreeshant-b3b841377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
