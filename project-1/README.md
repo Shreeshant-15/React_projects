@@ -8,7 +8,8 @@ A modern and responsive Nike landing page built using **React.js** and **Vite**.
 
 ## 📸 Screenshot
 
-<img width="100%" alt="Nike Landing Page" src="./src/assets/screenshot.png">
+<img width="2874" height="1616" alt="image" src="https://github.com/user-attachments/assets/0fd057f6-eba7-4562-8235-d1404524ce0c" />
+
 
 ## ✨ Features
 
