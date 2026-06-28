@@ -1,21 +1,18 @@
+
 import styled from "styled-components";
 
-const RollDice = () => {
+const RollDice = ({ currentDice, roleDice }) => {
 
-        
-
-
-
-  return (
-    <DiceContainer>
-        <div className="dice">
-            <img src="/images/dice/dice_1.png" alt="dice 1" />
-        </div>
-        <p>
-            Click an the dice to roll
-        </p>
-    </DiceContainer>
-  )
+    return (
+        <DiceContainer>
+            <div className="dice" onClick={roleDice}>
+                <img src={`/images/dice/dice_${currentDice}.png`} alt="dice 1" />
+            </div>
+            <p>
+                Click an the dice to roll
+            </p>
+        </DiceContainer>
+    )
 }
 
 export default RollDice;
