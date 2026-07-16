@@ -1,20 +1,55 @@
-import styles from ".styled-components";
+import styled from "styled-components";
+
 
 const App = () => {
   return (
-  <MainContainer>
+  <Container>
     <TopContainer>
       <div className="logo">
         <img src="/logo.svg" alt="logo" />
       </div>
 
       <div className="search">
+        <input placeholder="Search Food"/>
+      </div>
     </TopContainer>
-  </MainContainer>
+    <FilterContainer>
+
+    </FilterContainer>
+
+    <Button>
+
+    </Button>
+  </Container>
   );
 };
 
 export default App;
 
-const MainContainer = styled.div``;
-const TopContainer = styled.div``;
+const Container = styled.div`
+  max-width:1200px;
+  margin:0 auto;
+`;
+const TopContainer = styled.div`
+  min-height:140px;
+  display:flex;
+  justify-content:space-between;
+  padding:16px;
+  align-items:center;
+
+  .search{
+    input{
+    background-color:transparent;
+    border:1px solid red;
+    color:white;
+    border-radius:5px;
+    height:40px;
+    font-size:16px;
+    padding:0 10px;
+   }
+  }
+`;
+
+const FilterContainer = styled.section``;
+
+const Button = styled.button``;
