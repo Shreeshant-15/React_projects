@@ -2,25 +2,33 @@ import styled from "styled-components";
 
 
 const App = () => {
+
+   const [] = useState()
   return (
-  <Container>
-    <TopContainer>
-      <div className="logo">
-        <img src="/logo.svg" alt="logo" />
-      </div>
+    <Container>
+      <TopContainer>
+        <div className="logo">
+          <img src="/logo.svg" alt="logo" />
+        </div>
 
-      <div className="search">
-        <input placeholder="Search Food"/>
-      </div>
-    </TopContainer>
-    <FilterContainer>
+        <div className="search">
+          <input placeholder="Search Food" />
+        </div>
+      </TopContainer>
+      <FilterContainer>
+        <Button>All</Button>
+        <Button>Breakfast</Button>
+        <Button>Lunch</Button>
+        <Button>Dinner</Button>
 
-    </FilterContainer>
+      </FilterContainer>
+      <FoodCardContainer>
+        <FoodCards>
 
-    <Button>
+        </FoodCards>
+      </FoodCardContainer>
 
-    </Button>
-  </Container>
+    </Container>
   );
 };
 
@@ -50,6 +58,26 @@ const TopContainer = styled.div`
   }
 `;
 
-const FilterContainer = styled.section``;
+const FilterContainer = styled.section`
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  padding-bottom:40px;
+`;
 
-const Button = styled.button``;
+const Button = styled.button`
+  background:#ff4343;
+  border-radius:5px;
+  padding:6px 12px;
+  border:none;
+  color:white;
+`;
+
+const FoodCardContainer = styled.section`
+  height: calc(100vh - 210px);
+  background-image: url("/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
+
+const FoodCards = styled.div``;
