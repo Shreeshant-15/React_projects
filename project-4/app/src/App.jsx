@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const BASE_URL = "https://localhost:9000/";
+const BASE_URL = "http://localhost:9000/";
 
 const App = () => {
 
@@ -28,7 +28,7 @@ const App = () => {
    };
    fetchFoodData();
   }, []);
-
+console.log(data);
 
    if(error) return <div>{error}</div>;
    if(loading) return <div>Loading...</div>;
