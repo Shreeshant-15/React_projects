@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import SearchResult from "./components/SearchResult";
 
-const BASE_URL = "http://localhost:9000/";
+export const BASE_URL = "http://localhost:9000";
 
 const App = () => {
 
@@ -51,12 +52,8 @@ console.log(data);
         <Button>Dinner</Button>
 
       </FilterContainer>
-      <FoodCardContainer>
-        <FoodCards>
-
-        </FoodCards>
-      </FoodCardContainer>
-
+   
+        <SearchResult data={data || []}/>
     </Container>
   );
 };
@@ -64,11 +61,12 @@ console.log(data);
 export default App;
 
 const Container = styled.div`
-  max-width:1200px;
-  margin:0 auto;
+  width: 96%;
+  max-width: none;
+  margin: 0 auto;
 `;
 const TopContainer = styled.div`
-  min-height:140px;
+  height:140px;
   display:flex;
   justify-content:space-between;
   padding:16px;
@@ -83,30 +81,28 @@ const TopContainer = styled.div`
     height:40px;
     font-size:16px;
     padding:0 10px;
+
    }
   }
 `;
 
-const FilterContainer = styled.section`
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  padding-bottom:40px;
+const FilterContainer = styled.div`
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 12px 16px;
 `;
 
-const Button = styled.button`
-  background:#ff4343;
-  border-radius:5px;
-  padding:6px 12px;
-  border:none;
-  color:white;
+export const Button = styled.button`
+  border: 1px solid red;
+  border-radius: 5px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
 `;
 
-const FoodCardContainer = styled.section`
-  height: calc(100vh - 210px);
-  background-image: url("/bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-`;
 
-const FoodCards = styled.div``;
+
+
+
