@@ -7,6 +7,7 @@ export const BASE_URL = "http://localhost:9000";
 const App = () => {
 
   const [data, setData] = useState(null);
+  const [filteredData,setFilteredData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   
@@ -21,6 +22,7 @@ const App = () => {
       const json = await response.json();
 
       setData(json);
+      setFilteredData(json);
       setLoading(false);
 
     }catch(error){
@@ -29,12 +31,30 @@ const App = () => {
    };
    fetchFoodData();
   }, []);
-console.log(data);
+  
+  const searchFood = (e) => {
+    const searchValue = e.target.value.toLowerCase().trim();
+
+    if (searchValue === "") {
+      setFilteredData(data);
+      return;
+    }
+
+    const filteredFood = data?.filter((food) =>
+      food.name.toLowerCase().includes(searchValue)
+    );
+    setFilteredData(filteredFood ?? []);
+  };
+
+
+    
+
 
    if(error) return <div>{error}</div>;
-   if(loading) return <div>Loading...</div>;
+   if(loading) return <div>loading...</div>;
 
   return (
+  <>
     <Container>
       <TopContainer>
         <div className="logo">
@@ -42,7 +62,7 @@ console.log(data);
         </div>
 
         <div className="search">
-          <input placeholder="Search Food" />
+          <input onChange={searchFood} placeholder="Search Food" />
         </div>
       </TopContainer>
       <FilterContainer>
@@ -53,14 +73,16 @@ console.log(data);
 
       </FilterContainer>
    
-        <SearchResult data={data || []}/>
     </Container>
+        <SearchResult data={filteredData}/>
+  
+  </>
   );
 };
 
 export default App;
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 96%;
   max-width: none;
   margin: 0 auto;

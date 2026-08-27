@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { BASE_URL } from "../App.jsx";
+import { BASE_URL, Container } from "../App.jsx";
 import { Button } from "../App.jsx";
 
 const SearchResult = ({ data}) => {
   return (
        <FoodCardContainer>
-        <FoodCards>
+        <Container>
+          <FoodCards>
             {data ?.map((food) =>(
                 <FoodCard key={food.name}>
                     <div className="food_image">
@@ -24,6 +25,7 @@ const SearchResult = ({ data}) => {
             ))}
 
         </FoodCards>
+        </Container>
       </FoodCardContainer>
   );
 };
