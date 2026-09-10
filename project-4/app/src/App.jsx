@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import SearchResult from "./components/SearchResult";
 
-export const BASE_URL = "http://localhost:9000";
+export const BASE_URL =
+  "https://react-projects-i237-fa6aqxy4o-nimmu.vercel.app";
 
 const App = () => {
 
