@@ -1,35 +1,33 @@
-# 🍔 FoodZone
+# 🍔 Food Zone
 
-A modern and interactive Food Browsing Web Application built using **React.js**, **Vite**, **Styled Components**, and **Express.js**. This project allows users to browse food items, search for food, and filter food based on categories like Breakfast, Lunch, and Dinner.
+A modern and interactive food ordering interface built using **React.js** and **Vite**. This project demonstrates React fundamentals, component-based architecture, state management, search and filtering functionality, dynamic rendering, and responsive UI design.
 
 ## 🚀 Live Demo
 
 🔗 https://react-projects-s48h.vercel.app/
+
 ---
 
 ## 📸 Screenshot
 
-<img width="2864" height="1514" alt="Screenshot 2026-09-23 172744" src="https://github.com/user-attachments/assets/9d9de3ce-d1f1-4b34-b245-50e06e5301f0" />
-<img width="2876" height="1548" alt="Screenshot 2026-09-23 172754" src="https://github.com/user-attachments/assets/60bd9df6-0868-4889-a2bb-0341064d7b41" />
-<img width="2872" height="1552" alt="Screenshot 2026-09-23 172809" src="https://github.com/user-attachments/assets/bfd18dad-bcf6-400a-a976-cec36117955d" />
-<img width="2880" height="1516" alt="Screenshot 2026-09-23 172834" src="https://github.com/user-attachments/assets/58e01638-bef2-4e6e-9dea-2c86b9f0dfc1" />
-
+<img width="2864" height="1514" alt="Screenshot 2026-09-23 172744" src="https://github.com/user-attachments/assets/b622ad5b-2f3d-4299-aa9c-9c2f74b7a7e5" />
+<img width="2876" height="1548" alt="Screenshot 2026-09-23 172754" src="https://github.com/user-attachments/assets/90f31301-9f89-4d1d-9581-3cdba6688f5f" />
+<img width="2872" height="1552" alt="Screenshot 2026-09-23 172809" src="https://github.com/user-attachments/assets/4fce5611-783f-4ee9-a350-f3afcf2c8cb6" />
+<img width="2880" height="1516" alt="Screenshot 2026-09-23 172834" src="https://github.com/user-attachments/assets/c9be4510-3e41-4c06-8245-c0795afc52ff" />
 
 ---
 
 ## ✨ Features
 
-- 🔍 Search for food items
-- 🍳 Filter food by Breakfast
-- 🍱 Filter food by Lunch
-- 🍽️ Filter food by Dinner
-- 📋 View all food items
-- 🖼️ Display food images
-- ⚡ Fast and interactive UI
-- 📱 Responsive design
-- 🎨 Styled Components for styling
-- 🔗 React frontend connected with Express backend
-- 🌐 Deployed using Vercel
+- 🍔 Display food items
+- 🔍 Search functionality
+- 🎯 Filter food items by category
+- 📋 Dynamic food list
+- ⚛️ Component-based architecture
+- 🔄 Dynamic rendering
+- 📱 Responsive UI
+- 🎨 Interactive and clean design
+- ⚡ Fast performance with Vite
 
 ---
 
@@ -39,13 +37,8 @@ A modern and interactive Food Browsing Web Application built using **React.js**,
 - Vite
 - JavaScript (ES6+)
 - Styled Components
-- Express.js
-- Node.js
-- REST API
 - HTML5
 - CSS3
-- Vercel
-- Git & GitHub
 
 ---
 
@@ -54,27 +47,21 @@ A modern and interactive Food Browsing Web Application built using **React.js**,
 ```text
 project-4
 │
-├── app
-│   ├── public
-│   ├── src
-│   │   ├── assets
-│   │   ├── components
-│   │   ├── App.jsx
-│   │   ├── SearchResult.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   │
-│   ├── package.json
-│   └── vite.config.js
+├── public
 │
-└── server
-    ├── src
-    │   └── index.ts
-    ├── public
-    │   └── images
-    ├── dist
-    ├── package.json
-    └── tsconfig.json
+├── src
+│   ├── assets
+│   ├── components
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+├── package-lock.json
+└── vite.config.js
+```
+
+---
 
 ## ⚙️ Installation
 
@@ -92,65 +79,25 @@ git clone https://github.com/Shreeshant-15/React_projects.git
 cd React_projects/project-4
 ```
 
----
-
-## 💻 Frontend Setup
-
-Go to the app folder:
+### Go to the app folder
 
 ```bash
 cd app
 ```
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server:
+### Run the development server
 
 ```bash
 npm run dev
 ```
 
-The frontend will run on a local Vite development server.
-
----
-
-## 🖥️ Backend Setup
-
-Open another terminal and go to the server folder:
-
-```bash
-cd React_projects/project-4/server
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the server:
-
-```bash
-npm start
-```
-
-The backend server runs on:
-
-```text
-http://localhost:9000
-```
-
----
-
-## 🌐 API Integration
-
-The frontend communicates with the deployed backend using REST API requests.
-
-The application fetches data from the backend and dynamically displays it in the React interface.
+The application will run on the local Vite development server.
 
 ---
 
@@ -164,26 +111,24 @@ The application fetches data from the backend and dynamically displays it in the
 - Event Handling
 - Conditional Rendering
 - Component Communication
-- API Fetching
-- REST APIs
-- Express.js
-- Node.js
-- MongoDB
-- CORS
-- Frontend and Backend Integration
+- State Management
+- JavaScript Array `.map()`
+- Filtering Data
 - Search Functionality
-- Dynamic Data Rendering
+- Dynamic Rendering
+- Styled Components
+- Responsive UI Design
 - Vite
 - Git and GitHub
-- Deploying frontend and backend using Vercel
+- Deploying React Applications using Vercel
 
 ---
 
 ## 🚀 Deployment
 
-The frontend and backend were deployed separately using **Vercel**.
+The frontend application is deployed using **Vercel**.
 
-### Frontend
+### Live Demo
 
 🔗 [https://react-projects-s48h.vercel.app/](https://react-projects-s48h.vercel.app/)
 
@@ -195,9 +140,7 @@ The frontend and backend were deployed separately using **Vercel**.
 
 ## 🙌 Acknowledgements
 
-This project was created as part of my React and Full Stack development learning journey.
-
-It helped me understand how a React frontend communicates with a Node.js/Express backend and how data can be fetched and displayed dynamically.
+This project was created as part of my **React learning journey** to improve my understanding of frontend development, React components, state management, search functionality, filtering, and responsive UI design.
 
 ---
 
@@ -216,3 +159,7 @@ It helped me understand how a React frontend communicates with a Node.js/Express
 ### Live Demo
 
 [https://react-projects-s48h.vercel.app/](https://react-projects-s48h.vercel.app/)
+
+---
+
+⭐ If you like this project, feel free to check out the repository and explore the code!
