@@ -76,99 +76,143 @@ project-4
     ├── package.json
     └── tsconfig.json
 
-⚙️ Installation
+## ⚙️ Installation
 
-Clone the repository
+### Clone the repository
+
+[GitHub Repository](https://github.com/Shreeshant-15/React_projects)
+
+```bash
 git clone https://github.com/Shreeshant-15/React_projects.git
-Go to the project folder
+```
+
+### Go to the project folder
+
+```bash
 cd React_projects/project-4
+```
 
-💻 Frontend Setup
+---
 
-Go to the app folder
+## 💻 Frontend Setup
+
+Go to the app folder:
+
+```bash
 cd app
-Install dependencies
+```
+
+Install dependencies:
+
+```bash
 npm install
-Run the development server
+```
+
+Run the development server:
+
+```bash
 npm run dev
+```
 
-The frontend will run on a local URL such as:
+The frontend will run on a local Vite development server.
 
-http://localhost:5173/
+---
 
-🖥️ Backend Setup
+## 🖥️ Backend Setup
 
-Open another terminal.
+Open another terminal and go to the server folder:
 
-Go to the server folder
+```bash
 cd React_projects/project-4/server
-Install dependencies
+```
+
+Install dependencies:
+
+```bash
 npm install
-Start the server
+```
+
+Start the server:
+
+```bash
 npm start
+```
 
-The backend server will run on:
+The backend server runs on:
 
+```text
 http://localhost:9000
+```
 
-🔎 How It Works
+---
 
-The application fetches food data from the Express.js backend and displays it in the React frontend.
+## 🌐 API Integration
 
-Users can:
+The frontend communicates with the deployed backend using REST API requests.
 
-View all available food items.
-Search for a specific food item.
-Select a category.
-Filter food based on:
-Breakfast
-Lunch
-Dinner
-View the filtered food results.
+The application fetches data from the backend and dynamically displays it in the React interface.
 
-📚 What I Learned
+---
 
-React Components
-JSX
-Props
-useState Hook
-useEffect Hook
-Event Handling
-Conditional Rendering
-Component Communication
-Styled Components
-Dynamic Styling
-Array .filter()
-Array .map()
-Search Functionality
-Category Filtering
-Fetch API
-Connecting React with Express.js
-REST API
-Frontend and Backend Integration
-Git & GitHub
-Deploying Full-Stack Applications using Vercel
+## 📚 What I Learned
 
-🌐 Deployment
+- React Components
+- JSX
+- Props
+- useState Hook
+- useEffect Hook
+- Event Handling
+- Conditional Rendering
+- Component Communication
+- API Fetching
+- REST APIs
+- Express.js
+- Node.js
+- MongoDB
+- CORS
+- Frontend and Backend Integration
+- Search Functionality
+- Dynamic Data Rendering
+- Vite
+- Git and GitHub
+- Deploying frontend and backend using Vercel
 
-The project is deployed using Vercel.
+---
 
-🙌 Acknowledgements
+## 🚀 Deployment
 
-This project was created as part of my React learning journey and to improve my understanding of React components, state management, API integration, search functionality, filtering, and frontend-backend communication.
+The frontend and backend were deployed separately using **Vercel**.
 
-👨‍💻 Author
+### Frontend
 
-B H Shreeshant
+🔗 [https://react-projects-s48h.vercel.app/](https://react-projects-s48h.vercel.app/)
 
-GitHub
+### GitHub Repository
 
-🔗 https://github.com/Shreeshant-15
+🔗 [https://github.com/Shreeshant-15/React_projects/tree/main/project-4](https://github.com/Shreeshant-15/React_projects/tree/main/project-4)
 
-LinkedIn
+---
 
-🔗 https://www.linkedin.com/in/b-h-shreeshant-b3b841377
+## 🙌 Acknowledgements
 
-Live Demo
+This project was created as part of my React and Full Stack development learning journey.
 
-🔗 https://react-projects-s48h.vercel.app/
+It helped me understand how a React frontend communicates with a Node.js/Express backend and how data can be fetched and displayed dynamically.
+
+---
+
+## 👨‍💻 Author
+
+**B H Shreeshant**
+
+### GitHub
+
+[https://github.com/Shreeshant-15](https://github.com/Shreeshant-15)
+
+### LinkedIn
+
+[https://www.linkedin.com/in/b-h-shreeshant-b3b841377](https://www.linkedin.com/in/b-h-shreeshant-b3b841377)
+
+### Live Demo
+
+[https://react-projects-s48h.vercel.app/](https://react-projects-s48h.vercel.app/)
