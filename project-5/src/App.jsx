@@ -2,6 +2,13 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import { IoSearchSharp } from "react-icons/io5";
 import { FaCirclePlus } from "react-icons/fa6";
+import { useEffect, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "./config/firebase";
+import { HiOutlineUserCircle } from "react-icons/hi";
+import {IoMdTrash} from "react-icons/io";
+import {RiEditCircleLine} from "react-icons/ri"; 
+
 
 
 const App = () => {
@@ -11,8 +18,21 @@ const App = () => {
   useEffect(() => {
     const getContacts = async () => {
       try{
+          const contactsRef = collection(db,"contacts");
+          const contactsSnapshot = await getDocs(contactsRef);
+          const contactLists = contactsSnapshot.docs.map((doc) => {
+            return {id: doc.id, ...doc.data()
 
-      }catch(error){}
+            }; 
+          
+          });
+        
+         setContacts(contactLists);
+
+
+      }catch(error){
+        console.log(error);
+      }
     };
     getContacts();
     },[]); 
@@ -34,6 +54,23 @@ const App = () => {
   </div>
         <FaCirclePlus className="text-4xl cursor-pointer text-white" />
   
+    </div>
+    <div>
+      {contacts.map((contact) => (
+        <div key={contact.id} className="bg-yellow flex justify-around items-center">
+          <div className="flex">
+            <HiOutlineUserCircle className="text-3xl text-orange"/>
+          <div className="">
+            <h2 className="">{contact.name} </h2>
+            <p claasName="">{contact.email}</p>
+          </div>
+        </div>
+        <div className="flex">
+          <RiEditCircleLine/>
+          <IoMdTrash/>
+        </div>
+        </div>
+      ))}
     </div>
      </div>
   );
