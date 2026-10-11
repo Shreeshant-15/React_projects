@@ -57,8 +57,10 @@ const App = () => {
     </div>
     <div>
       {contacts.map((contact) => (
-        <div key={contact.id} className="bg-yellow flex justify-around items-center">
-          <div className="flex">
+        <div key={contact.id} 
+        className="bg-yellow flex justify-around items-center rounded-lg bg-yellow p-2">
+          
+          <div className="flex gap-1">
             <HiOutlineUserCircle className="text-3xl text-orange"/>
           <div className="">
             <h2 className="">{contact.name} </h2>
